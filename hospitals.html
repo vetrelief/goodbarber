@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <button onclick="history.back()">Go Back</button>
+    <title>Hospitals</title>
+  </head>
+  <body>
+    <header>
+      <h1>Hospitals</h1>
+      <p>Post Jobs, get bids, hire vets</p>
+    </header>
+    <section>
+      <div class="background"></div>
+      <a class="card relief_job" href="https://vetrelief.com/hospitallogin//?page=jobs_relief_new&sub=step1&hosp_id=">
+        <img src="assetss/urgent.png" alt="Relief Job" />
+        <h1>Post Relief Job</h1>
+      </a>
+      <a class="card permanent_job" href="https://vetrelief.com/hospitallogin/?page=jobs_perm_new">
+        <img src="assetss/lock.png" alt="Permanent Job" />
+        <h1>Post Permanent Job</h1>
+      </a>
+      <a class="card bids" href="https://vetrelief.com/hospitallogin/?page=bids&sub=start_bids">
+        <img src="assetss/bids.png" alt="Bids" />
+        <h1>View Bids</h1>
+      </a>
+      <a class="card boost" href="https://vetrelief.com/boost.phtml">
+        <img src="assetss/boost.png" alt="Boost Jobs" />
+        <h1>Boost your job posts</h1>
+      </a>
+      <a class="card telehealth" href="https://vetrelief.pet">
+        <img src="assetss/tele.png" alt="Telehealth" />
+        <h1>Telehealth</h1>
+      </a>
+    </section>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+        background-color: #ffba5f;
+      }
+      html {
+        background-color: #f5fafe;
+      }
+      header {
+        width: 100vw;
+        text-align: center;
+        padding: 1rem 2rem 0 2rem;
+        max-width: 980px;
+        margin: auto auto 4rem auto;
+      }
+      header > h1 {
+        font-size: 60px;
+        margin: 0 0 20px 0;
+        text-align: left;
+      }
+      header > img {
+        width: 80vw;
+        height: 55vw;
+        object-fit: cover;
+        object-position: top;
+        margin: auto;
+        max-width: 780px;
+      }
+      header > p {
+        width: 80vw;
+        margin: auto;
+        font-size: 49px;
+        text-align: left;
+        font-style: italic;
+      }
+      section {
+        display: grid;
+        grid-template-columns: 10% 37% 6% 37% 10%;
+        grid-template-rows: 4rem 4rem 20vh 4rem 4rem 20vh 4rem 4rem 20vh 5rem;
+        max-width: 980px;
+        margin: auto;
+      }
+      .card {
+        grid-area: auto;
+        background-color: #ffffff;
+        border-radius: 2rem;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        padding: 1rem;
+      }
+      .card > h1 {
+        font-size: 40px;
+        margin: 0;
+      }
+      .card > img {
+        width: 100%;
+        max-height: 55%;
+        object-fit: contain;
+      }
+      .card > p {
+        font-size: 2rem;
+        margin: 0;
+      }
+      .relief_job {
+        grid-column: 2 / 3;
+        grid-row: 1 / 4;
+      }
+      .permanent_job {
+        grid-column: 4 / 5;
+        grid-row: 2 / 5;
+      }
+      .bids {
+        grid-column: 2 / 3;
+        grid-row: 5 / 7;
+      }
+      .boost {
+        grid-column: 4 / 5;
+        grid-row: 6 / 8;
+      }
+      .telehealth {
+        grid-column: 2 / 3;
+        grid-row: 8 / 10;
+      }
+      .background {
+        background-color: #f5fafe;
+        border-radius: 4rem 4rem 0 0;
+        grid-column: 1 / 6;
+        grid-row: 3 / 11;
+      }
+    </style>
+  </body>
+</html>

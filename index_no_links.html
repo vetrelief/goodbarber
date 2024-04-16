@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vetrelief</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/logovrpet.png" alt="Vetrelief Logo" />
+      <p>The veterinary jobs marketplace,</p>
+      <p>since 1990</p>
+    </header>
+    <section>
+      <div class="background"></div>
+      <div class="card veterinarians">
+        <img src="assets/vet1.png" alt="Veterinarians" />
+        <h1>Veterinarians</h1>
+        <p>Book jobs</p>
+      </div>
+      <div class="card pet_owners">
+        <img src="assets/good and bad dog copy.png" alt="Pet Owners" />
+        <h1>Pet Owners</h1>
+        <p>Telehealth</p>
+      </div>
+      <div  class="card hospitals">
+        <img src="assets/hosp1.png" alt="Veterinarians" />
+        <h1>Hospitals</h1>
+        <p>Hire vets</p>
+      </div>
+      <div class="card corporations">
+        <img src="assets/corp.png" alt="Hospitals" />
+        <h1>Corporations & Private Equity</h1>
+      </div>
+    </section>
+    <footer>
+      <a href="#">About - Give feedback</a>
+    </footer>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+        min-height: 100vh;
+        background-color: #ffba5f;
+        position: relative;
+      }
+      html {
+        background-color: #ffba5f;
+      }
+      header {
+        width: 100vw;
+        text-align: center;
+        padding: 1rem 2rem 0 2rem;
+        background-color: #ffba5f;
+        max-width: 980px;
+        margin: auto;
+        min-height: 35vh;
+      }
+      header > img {
+        width: 80vw;
+        height: 55vw;
+        object-fit: cover;
+        object-position: top;
+        margin: auto;
+        max-width: 784px;
+        max-height: 539px;
+      }
+      header > p {
+        width: 80vw;
+        margin: auto;
+        font-size: 50px;
+        text-align: left;
+        font-style: italic;
+      }
+      h1 {
+        font-size: 40px;
+        margin: 0;
+      }
+      section {
+        background-color: #ffba5f;
+        display: grid;
+        grid-template-columns: 10% 37% 6% 37% 10%;
+        grid-template-rows: 4rem 4rem 20vh 4rem 4rem 20vh 4rem 4rem 4rem;
+        max-width: 980px;
+        margin: auto;
+        min-height: 65vh;
+      }
+      .card {
+        grid-area: auto;
+        background-color: #ffffff;
+        border-radius: 2rem;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        padding: 1rem;
+      }
+      .card > h1 {
+        font-size: 29px;
+        margin: 0;
+      }
+      .card > img {
+        width: 100%;
+        max-height: 55%;
+        object-fit: contain;
+      }
+      .card > p {
+        font-size: 2rem;
+        margin: 0;
+      }
+      .veterinarians {
+        grid-column: 2 / 3;
+        grid-row: 1 / 4;
+      }
+      .pet_owners {
+        grid-column: 4 / 5;
+        grid-row: 2 / 5;
+      }
+      .hospitals {
+        grid-column: 2 / 3;
+        grid-row: 5 / 7;
+      }
+      .corporations {
+        grid-column: 4 / 5;
+        grid-row: 6 / 8;
+      }
+      .background {
+        background-color: #f5fafe;
+        border-radius: 4rem 4rem 0 0;
+        grid-column: 1 / 6;
+        grid-row: 3 / 10;
+        min-height: 60vh;
+      }
+      footer {
+        text-align: center;
+        position: absolute;
+        bottom: 0px;
+        width: 100vw;
+        margin: 1rem;
+      }
+      footer > a {
+        text-decoration: none;
+        font-size: 2rem;
+      }
+    </style>
+  </body>
+</html>
